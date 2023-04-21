@@ -7,8 +7,13 @@ export default {
   theme: {
     extend: {
       fontFamily:{
+<<<<<<< HEAD
         satoshi:["Satoshi","sans-serif"],
         inter:["Inter","sans-serif"]
+=======
+        satoshi: ["Satoshi","sans-serif"],
+        inter: ["Inter","sans-serif"],
+>>>>>>> 464af30 (changes)
       }
     },
   },

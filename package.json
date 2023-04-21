@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "ai-summarizer",
+=======
+  "name": "ai_summarizer",
+>>>>>>> 464af30 (changes)
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,7 +14,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+<<<<<<< HEAD
     "@reduxjs/toolkit": "^1.9.5",
+=======
+>>>>>>> 464af30 (changes)
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
