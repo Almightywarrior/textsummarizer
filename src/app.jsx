@@ -1,9 +1,19 @@
-import React from 'react'
+
+import "./App.css";
+import Hero from "./components/Hero";
 
 const App = () => {
   return (
-    <div>jiojijuhhyhyo</div>
-  )
-}//hello guys
+    <main>
+      <div className='main'>
+        <div className='gradient' />
+      </div>
 
-export default App
+      <div className='app'>
+        <Hero />
+      </div>
+    </main>
+  );
+};
+
+export default App;
