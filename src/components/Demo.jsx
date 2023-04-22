@@ -26,25 +26,25 @@ const Demo = () => {
   }, []);
 
   const handleSubmit = async (e) => {
-    alert('submitted')
-    // e.preventDefault();
+    e.preventDefault();
 
-    // const existingArticle = allArticles.find(
-    //   (item) => item.url === article.url
-    // );
+    const existingArticle = allArticles.find(
+      (item) => item.url === article.url
+    );
 
-    // if (existingArticle) return setArticle(existingArticle);
+    if (existingArticle) return setArticle(existingArticle);
 
-    // const { data } = await getSummary({ articleUrl: article.url });
-    // if (data?.summary) {
-    //   const newArticle = { ...article, summary: data.summary };
-    //   const updatedAllArticles = [newArticle, ...allArticles];
+    const { data } = await getSummary({ articleUrl: article.url });
+    if (data?.summary) {
+      const newArticle = { ...article, summary: data.summary };
+      const updatedAllArticles = [newArticle, ...allArticles];
 
-    //   // update state and local storage
-    //   setArticle(newArticle);
-    //   setAllArticles(updatedAllArticles);
-    //   localStorage.setItem("articles", JSON.stringify(updatedAllArticles));
-    // }
+      // update state and local storage
+      setArticle(newArticle);
+      console.log(newArticle);
+      setAllArticles(updatedAllArticles);
+      localStorage.setItem("articles", JSON.stringify(updatedAllArticles));
+    }
   };
 
   // copy the url and toggle the icon for user feedback
