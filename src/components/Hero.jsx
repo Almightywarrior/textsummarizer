@@ -21,7 +21,7 @@ const Hero = () => {
 
       <h1 className='head_text'>
         Summarize Articles with <br className='max-md:hidden' />
-        <span className='orange_gradient '>OpenAI Summarizer</span>
+        <span className='blue_gradient '>OpenAI Summarizer</span>
       </h1>
       <h2 className='desc'>
         Simplify your reading with Sumz, an open-source article summarizer
